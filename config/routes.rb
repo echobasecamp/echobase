@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'pages/index'
-
-  get 'pages/home'
-
-  get 'pages/profile'
-
-  get 'pages/explore'
+  
+  #DEFINE THE ROOT URL
+  root 'pages#index'
+  #DEFINE ROUTES FOR EACH OTHER PAGE -- literal folder structure not interperated
+  get 'home' => 'pages#home'  #LITERAL FOLD /pages/home -displays- /home URL
+  get 'profile' => 'pages#profile'
+  get 'explore' => 'pages#explore'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :users
+  devise_for :models
   #DEFINE THE ROOT URL
   root 'pages#index'
   #DEFINE ROUTES FOR EACH OTHER PAGE -- literal folder structure not interperated
